@@ -1,10 +1,10 @@
 import React from 'react';
-import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import PhoneIcon from '@material-ui/icons/Phone';
-import FavoriteIcon from '@material-ui/icons/Favorite';
+
+import Icon from '../Icon/icon';
 
 const useStyles = makeStyles({
   root: {
@@ -13,7 +13,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function IconLabelTabs() {
+export default function IconTabs() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -27,11 +27,11 @@ export default function IconLabelTabs() {
         value={value}
         onChange={handleChange}
         variant="fullWidth"
-        indicatorColor="secondary"
-        textColor="secondary"
+        indicatorColor="primary"
+        textColor="primary"
       >
-        <Tab icon={<PhoneIcon />} label="RECENTS" />
-        <Tab icon={<FavoriteIcon />} label="FAVORITES" />
+        <Tab icon={<Icon name = "start" />} aria-label="Phone" />
+        <Tab icon={<Icon name = "location_on"/>} aria-label="Favorite" />
       </Tabs>
     </Paper>
   );
