@@ -21,9 +21,9 @@
   font-family: poppins!important;
 }
 
-<<<<<<< HEAD
 .App {
   text-align: center;
+  margin-top: 10vh;
 }
 
 .App-logo {
@@ -54,8 +54,7 @@
   to {
     transform: rotate(360deg);
   }
-=======
+}
 .loginContent{
   align-content: center!important;
->>>>>>> 021cff2e531755a9de5343c065f3619e1b9b76fb
 }

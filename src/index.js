@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './Assets/index.css';
-import Home from './Container/home';
 //import App from './Container/App';
 import * as serviceWorker from './serviceWorker';
 
 //ReactDOM.render(<App />, document.getElementById('root'));
 //ReactDOM.render(<Home />, document.getElementById('root'));
-//import App from './Container/App';
-import * as serviceWorker from './serviceWorker';
-//import Perfil from './Container/perfil';
+import Home from './Container/home';
+import Perfil from './Container/perfil';
 import Login from './Container/login';
 import Register from './Container/register';
 
