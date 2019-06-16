@@ -11,6 +11,7 @@ import Home from './Container/home';
 import Perfil from './Container/perfil';
 import Login from './Container/login';
 import Register from './Container/register';
+import Home2 from './Container/home2';
 
 const routing = (
   <Router>
@@ -19,6 +20,7 @@ const routing = (
       <Route path="/login" component={Login} />
       <Route path="/register" component={Register} />
       <Route path="/perfil" component={Perfil} />
+      <Route path="/home" component={Home2} />
     </div>
   </Router>
 )
