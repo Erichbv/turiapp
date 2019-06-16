@@ -6,8 +6,10 @@ import AppBar from '@material-ui/core/AppBar';
 import Card from '../Components/Home/card';
 import Button from '../Components/Home/button';
 import Label from '../Components/Home/label';
+import Toolbar from '@material-ui/core/Toolbar';
 import GridList from '../Components/Home/gridList';
 import Tab from '../Components/Home/tab';
+import 'typeface-poppins';
 
 import '../Assets/Container/Home/home.css';
 
@@ -25,25 +27,24 @@ class Home extends Component {
 
   render () {
     return (
-        <Grid container spacing={0}>
-          <AppBar position="fixed">
-            <Grid item xs={6} >
-              <Box Index="tooltip">
-                <Label text = "Vista Usuario" />
-              </Box>
-            </Grid>
-            <Grid item xs={6}>
-              <Button color ="primary" class = "" text = "Ingresar" />
-            </Grid>
+        <Grid>
+          <AppBar xs={12} position="fixed" className="homeNavbar">
+            <Toolbar>
+              <Grid item xs={9} md={10} className="homeText">
+                <Label text = "Usuarios destacados"/>
+              </Grid>
+              <Grid item xs={2} md={2}>
+                <Button color ="primary" class = "" text = "Ingresar"/>
+              </Grid>
+            </Toolbar>
           </AppBar>
           <Grid item xs={12} >
             <Card class = "card" >
               <GridList users = {this.state.topUser} />
             </Card>
-
           </Grid>
-          <Grid item xs={12}>
-            <Tab />
+          <Grid item xs={12} className="tabsNavegacion">
+            <Tab className="centroTabs"/>
           </Grid>
         </Grid>
     );
