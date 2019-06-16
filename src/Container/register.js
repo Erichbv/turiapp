@@ -6,10 +6,12 @@ import Typography from '@material-ui/core/Typography';
 import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 
-import '../../Assets/Components/Register/register.css';
+import '../Assets/Components/Register/register.css';
+import '../Assets/Container/App.css'
 
 const register = (props) => {
   return (
+    <div className="App">
     <Grid
       direction="row"
       spacing={2}>
@@ -86,6 +88,7 @@ const register = (props) => {
         </Button>
       </Grid>
     </Grid>
+  </div>
   );
 }
 
