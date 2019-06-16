@@ -6,14 +6,12 @@ import Typography from '@material-ui/core/Typography';
 import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 
-import '../../Assets/Components/Login/login.css';
+import '../Assets/Components/Login/login.css';
 
 const login = (props) => {
   return (
-    <Grid
-      direction="row"
-      spacing={2}>
-      <Grid item xs={12}>
+    <Grid alignItems="center" justify="center" Container>
+      <Grid item xs={6}>
         <Typography
           className=""
           variant="h6"
@@ -28,7 +26,7 @@ const login = (props) => {
           con tu cuenta
         </Typography>
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs={6}>
         <TextField
             id="standard-email-input"
             label="Correo electronico"
@@ -38,7 +36,7 @@ const login = (props) => {
             margin="normal"
           />
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs={6}>
         <TextField
           id="standard-password-input"
           label="Contraseña"
@@ -48,13 +46,13 @@ const login = (props) => {
           margin="normal"
         />
       </Grid>
-      <Grid item xs={12} className="LoginCheck">
+      <Grid item xs={6} className="LoginCheck">
           <FormControlLabel
             control={<Checkbox value="checkedC" />}
             label="recordar contraseña"
             />
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs={6}>
         <Button
           variant="contained"
           className="LoginButton"
@@ -62,7 +60,7 @@ const login = (props) => {
           Iniciar Sesion
         </Button>
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs={6}>
         <Button
           variant="outlined"
           size="large"
