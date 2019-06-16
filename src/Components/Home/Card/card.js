@@ -10,10 +10,14 @@ const card = (props) => {
     <Card className={props.classCard}>
       <CardActionArea>
         <CardMedia
+          component="img"
+          height= {props.heightImg}
+          alt= {props.altImg}
           className={props.classMedia}
           image={props.img}
-          title={props.title}
+          title={props.titleImg}
         />
+        holi
       </CardActionArea>
       <CardContent>
       <Typography gutterBottom variant="h5" component="h2">
