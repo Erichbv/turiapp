@@ -9,13 +9,13 @@ import Button from '../Components/Home/button';
 import Label from '../Components/Home/label';
 import Toolbar from '@material-ui/core/Toolbar';
 import GridList from '../Components/Home/gridList';
-import Tab from '../Components/Home/tab';
+import Tabs from '../Components/Home/tabs';
 import 'typeface-poppins';
 
 import '../Assets/Container/Home/home.css';
 
 
-class Home extends Component {
+class Home2 extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -35,7 +35,7 @@ class Home extends Component {
                 <Label text = "Usuarios destacados"/>
               </Grid>
               <Grid item xs={2} md={2}>
-                <Link to="/login"><Button color ="primary" class = "" text = "Ingresar"/></Link>
+                <Link to="/"><Button color ="primary" class = "" text = "Salir"/></Link>
               </Grid>
             </Toolbar>
           </AppBar>
@@ -45,7 +45,7 @@ class Home extends Component {
             </Card>
           </Grid>
           <Grid item xs={12} className="tabsNavegacion">
-            <Tab className="centroTabs"/>
+            <Tabs className="centroTabs"/>
           </Grid>
         </Grid>
     );
@@ -53,4 +53,4 @@ class Home extends Component {
 
 }
 
-export default Home;
+export default Home2;
