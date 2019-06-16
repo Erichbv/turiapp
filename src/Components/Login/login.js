@@ -3,6 +3,10 @@ import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Checkbox from '@material-ui/core/Checkbox';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+
+import '../../Assets/Components/Login/login.css';
 
 const login = (props) => {
   return (
@@ -44,10 +48,16 @@ const login = (props) => {
           margin="normal"
         />
       </Grid>
+      <Grid item xs={12} className="LoginCheck">
+          <FormControlLabel
+            control={<Checkbox value="checkedC" />}
+            label="recordar contraseña"
+            />
+      </Grid>
       <Grid item xs={12}>
         <Button
           variant="contained"
-          className={props.button}
+          className="LoginButton"
           size="large">
           Iniciar Sesion
         </Button>
@@ -56,7 +66,7 @@ const login = (props) => {
         <Button
           variant="outlined"
           size="large"
-          className="">
+          className="LoginButtonBorder">
           Registrar
         </Button>
       </Grid>

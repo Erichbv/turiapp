@@ -1,4 +1,4 @@
-.LoginButton{
+.RegisterButton{
   width: 12rem!important;
   margin: 0.5rem!important;
   background: #F8C822!important;
@@ -7,16 +7,10 @@
   font-family: poppins!important;
 }
 
-.LoginButtonBorder{
+.RegisterButtonBorder{
   width: 12rem!important;
   margin: 0.5rem!important;
   border-color: #000000!important;
   color: #000000!important;
-  border-radius: 20px!important;
-  font-family: poppins!important;
-}
-
-.LoginCheck{
-  color: black!importan;
-  font-family: poppins!important;
+  border-radius: 20px!important;  
 }

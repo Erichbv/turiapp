@@ -1,0 +1,25 @@
+.perfilAvatar{
+  width: 5rem!important;
+  height: 5rem!important;
+  font-family: poppins!important;
+}
+
+.perfilTexto{
+  word-spacing: 3rem!important;
+  font-weight: 700 !important;
+  font-family: poppins!important;
+}
+
+.perfilTextoSubtitle{
+  font-weight: 700 !important;
+  font-family: poppins!important;
+  margin-top: 0.5rem!important;
+}
+
+.perfilCardImagen{
+  width: 9rem!important;
+  height: 9rem!important;
+  border-radius: 1rem!important;
+  align-content: center!important;
+  margin: 0.5rem!important;
+}

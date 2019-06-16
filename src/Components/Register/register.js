@@ -3,6 +3,10 @@ import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Checkbox from '@material-ui/core/Checkbox';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+
+import '../../Assets/Components/Register/register.css';
 
 const register = (props) => {
   return (
@@ -61,17 +65,23 @@ const register = (props) => {
         <TextField
           id="standard-password-input"
           label="Password"
-          className=""
+          className="button"
           type="password"
           autoComplete="current-password"
           margin="normal"
         />
       </Grid>
+      <Grid item xs={12} className="LoginCheck">
+          <FormControlLabel
+            control={<Checkbox value="checkedC" />}
+            label="recordar contraseña"
+            />
+      </Grid>
       <Grid item xs={12}>
         <Button
           variant="contained"
           color="primary"
-          className="">
+          className="RegisterButton">
           REGISTARME
         </Button>
       </Grid>
