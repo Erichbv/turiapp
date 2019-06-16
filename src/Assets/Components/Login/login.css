@@ -1,6 +1,6 @@
 .LoginButton{
   width: 12rem!important;
-  margin: 0.5rem!important;
+  margin: 0.1rem!important;
   background: #F8C822!important;
   color: #FFFFFF!important;
   border-radius: 20px!important;
@@ -9,7 +9,7 @@
 
 .LoginButtonBorder{
   width: 12rem!important;
-  margin: 0.5rem!important;
+  margin: 0.1rem!important;
   border-color: #000000!important;
   color: #000000!important;
   border-radius: 20px!important;

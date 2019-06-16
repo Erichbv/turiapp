@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
 import AppBar from '@material-ui/core/AppBar';
 
 import Card from '../Components/Home/card';
@@ -21,6 +20,7 @@ class Home extends Component {
       topUser: [{name: "Ramiro", img: "static/img/house.jpg", point: 200, level: "Guia"},
       {name: "Pedro", img: "static/img/house.jpg", point: 100, level: "Turista"},
       {name: "Teresa", img: "static/img/house.jpg", point: 300, level: "Descubridor"},
+      {name: "Ivan", img: "static/img/house.jpg", point: 500, level: "Astronauta"},
       {name: "Ivan", img: "static/img/house.jpg", point: 500, level: "Astronauta"}]
     }
   }
