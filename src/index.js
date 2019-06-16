@@ -1,17 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import { Route, BrowserRouter as Router } from 'react-router-dom'
+
 import './Assets/index.css';
 //import App from './Container/App';
 import * as serviceWorker from './serviceWorker';
 
-//ReactDOM.render(<App />, document.getElementById('root'));
-//ReactDOM.render(<Home />, document.getElementById('root'));
 import Home from './Container/home';
 import Perfil from './Container/perfil';
 import Login from './Container/login';
 import Register from './Container/register';
 
-ReactDOM.render(<Login />, document.getElementById('root'));
+const routing = (
+  <Router>
+    <div>
+      <Route exact path="/" component={Home} />
+      <Route path="/login" component={Login} />
+      <Route path="/register" component={Register} />
+      <Route path="/perfil" component={Perfil} />
+    </div>
+  </Router>
+)
+
+ReactDOM.render(routing, document.getElementById('root'));
 //ReactDOM.render(<Home />, document.getElementById('root'));
 
 
