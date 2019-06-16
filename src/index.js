@@ -1,6 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './Assets/index.css';
+import Home from './Container/home';
+//import App from './Container/App';
+import * as serviceWorker from './serviceWorker';
+
+//ReactDOM.render(<App />, document.getElementById('root'));
+//ReactDOM.render(<Home />, document.getElementById('root'));
 //import App from './Container/App';
 import * as serviceWorker from './serviceWorker';
 //import Perfil from './Container/perfil';
@@ -9,6 +15,7 @@ import Register from './Container/register';
 
 ReactDOM.render(<Login />, document.getElementById('root'));
 //ReactDOM.render(<Home />, document.getElementById('root'));
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

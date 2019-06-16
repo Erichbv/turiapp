@@ -6,7 +6,7 @@ const gridList = (props) => {
   return (
     props.users.map(user => (
       <GridListTile key={user.img}>
-        <img src={user.img} alt={user.name} />
+        <img src={user.img} alt={user.name} className="homeImagen"/>
           <GridListTileBar
             title={user.name}
           />

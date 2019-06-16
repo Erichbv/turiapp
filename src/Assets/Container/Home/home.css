@@ -1,9 +1,16 @@
+.homeImagen{
+  width: 100% !important;
+}
+
 .card {
-   max-width: 345px;
+   width: 100%!important;
+   font-family: poppins!important;
 }
 
 .card li {
   list-style: none;
+  width: 100%!important;
+  font-family: poppins!important;
 }
 
 .CardContentText {
@@ -11,8 +18,35 @@
   flex-wrap: 'wrap';
   justify-content: 'space-around';
   overflow: 'hidden';
+  font-family: poppins!important;
 }
 
-.flex-top {
-  
+.tabsNavegacion {
+  position: fixed!important;
+  bottom: 0 !important;
+  width: 100%!important;
+}
+
+.tabsIcon{
+  color: #000000!important;
+  justify-content: space-evenly!important;
+  font-family: poppins!important;
+}
+
+.MuiTabs-flexContainer {
+    display: flex;
+    justify-content: space-evenly!important;
+    font-family: poppins!important;
+}
+
+.homeText{
+  padding-top:0.5rem!important;
+  padding-left:1rem!important;
+  color: #000000!important;
+  font-family: poppins!important;
+}
+
+.homeNavbar{
+  background: #FFFFFF!important;
+  font-family: poppins!important;
 }
