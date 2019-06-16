@@ -4,7 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
-import Icon from '../Icon/icon';
+import Icon from './icon';
 
 const useStyles = makeStyles({
   root: {
