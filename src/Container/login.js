@@ -6,13 +6,11 @@ import Typography from '@material-ui/core/Typography';
 import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 
-import '../../Assets/Components/Login/login.css';
+import '../Assets/Components/Login/login.css';
 
 const login = (props) => {
   return (
-    <Grid
-      direction="row"
-      spacing={2}>
+    <Grid spacing={2} alignItems="center" Container>
       <Grid item xs={12}>
         <Typography
           className=""

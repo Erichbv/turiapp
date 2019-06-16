@@ -40,7 +40,6 @@ class Home extends Component {
             <Card class = "card" >
               <GridList users = {this.state.topUser} />
             </Card>
-
           </Grid>
           <Grid item xs={12}>
             <Tab />
